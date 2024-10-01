@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <title>Meu portfólio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+  </style>
+  <link rel="stylesheet" href="style.css">
+  <!-- chamando o ícone na aba do navegador -->
+  <link rel="shortcut icon" href="./img/icon.png">
+  <!-- tag para inserirmos icones de uma lib externa no nosso HTML -->
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" data-auto-replace-svg="nest"></script>
+  <script src="type.js"></script>
+</head>
+
+<body>
+  <!-- cabeçalho da nossa página, visível ao usuário -->
+  <header class="header-menu">
+    <nav>
+        <img src="img/gif_gatinho.gif" alt="Meu GIF animado">
+      <ul class="lista-menu">
+        <li><a href="#formacao">Formação</a> </li>
+        <li><a href="#idiomas">Idiomas</a></li>
+        <li><a href="#meusprojetos">Meus Projetos</a></li>
+        <li><a href="#contato">Contatos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- corpo da nossa página, visível ao usuário -->
+  <main>
+    <section class="principal">
+      <article class="subcontainer-principal container">
+        <div>
+          <img src="img/icon.png" alt="Ícone do Portfólio">
+        </div>
+        <div>
+
+          <h1 class="nome-completo permanent-marker-regular">Larissa Silvério</h1>
+
+          <h2 id="frase-digitada" style="height: 1.5em; width: 30ch;"></h2>
+            <script>
+              const frase = "Desenvolvedora em formação.";
+              const elemento = document.getElementById("frase-digitada");
+              digitarFrase(frase, elemento, true, 100);
+            </script>
+
+        </div>
+        <div class="texto-sobre">
+          <p>
+            Olá, sou uma estudante de Análise e Desenvolvimento de Sistemas e Informática Biomédica. Atualmente, sou estagiária na EBANX, onde estou expandindo minhas habilidades no desenvolvimento de software. Além dos estudos acadêmicos, tenho grande interesse na integração entre tecnologia e saúde. Tenho uma paixão por resolver problemas complexos e aplicar soluções tecnológicas em ambientes inovadores.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- O ID é a forma de conectar nossa barra de navegação a esse trecho do código -->
+    <section id="formacao">
+      <article class="container article-lista">
+        <div>
+          <h3 class="topico-principal">Formação</h3>
+        </div>
+
+        <div class="lista-item">
+          <ul>
+            <li>
+              <p class="lista-titulo">Bacharelado em Informática Biomédica</p>
+              <a href="https://web.inf.ufpr.br/infobiomedica/" target="_blank" class="lista-local">UFPR</a>
+              <p class="lista-descricao">
+                Formação interdisciplinar voltada para o uso de tecnologias da informação no campo da saúde. Abrange áreas como sistemas de informação em saúde, análise de dados biomédicos, modelagem de sistemas biológicos e o uso de tecnologias em diagnósticos e terapias.
+              </p>
+            </li>
+
+            <li>
+              <li>
+              <p class="lista-titulo">Análise e Desenvolvimento de Sistemas</p>
+              <a href="https://www.uninter.com/graduacao-ead/curso-analise-e-desenvolvimento-de-sistemas/" target="_blank" class="lista-local">UNINTER</a>
+              <p class="lista-descricao">
+                Curso focado em desenvolvimento de sistemas, com ênfase em programação, estrutura de dados, engenharia de software e desenvolvimento de soluções tecnológicas para diversos ambientes. Habilidades adquiridas incluem: desenvolvimento front-end, back-end, banco de dados e integração de sistemas.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+      </article>
+    </section>
+
+    <section id="idiomas">
+      <article class="container article-lista">
+        <div>
+          <h3 class="topico-secundario">Idiomas</h3>
+        </div>
+
+        <div class="lista-item">
+          <ul>
+            <li>
+              <p class="lista-titulo">- Português: Nativo</p>
+            </li>
+            <li>
+              <p class="lista-titulo">- Inglês: Intermediário (fala, escrita e leitura)</p>
+            </li>
+            <li>
+              <p class="lista-titulo">- Espanhol: Básico</p>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+   <section id="meusprojetos">
+      <article class="container article-lista">
+        <div>
+          <h3 class= "topico-secundario">Meus Projetos</h3>
+        </div>
+
+        <div class="lista-item">
+          <ul>
+
+            <li>
+              <p class="lista-titulo">Calculadora - JS</p>
+              <a href="https://github.com/arivenabili42/Projeto_Final_Pretalab_Modulo-I.git" target="_blank" class="lista-local">.js</a>
+              <p class="lista-descricao">
+                Projeto concluído durante o Ciclo Formativo da PretaLab, com o intuito de avaliar o progresso do
+                primeiro módulo, bem como o
+                acompanhamento e compreensão do conteúdo. Apenas a parte lógica da calculadora foi desenvolvida.
+              </p>
+            <li>
+              <p class="lista-titulo">Portfólio - HTML/CSS/JS</p>
+              <a href="https://github.com/arivenabili42/Portfolio_Projeto_Final.git" target="_blank" class="lista-local">index.html</a>
+              <p class="lista-descricao">
+                Este portfólio foi desenvolvido durante as aulas de Fundamentos da Programação Web, com o objetivo de aplicar os conceitos aprendidos ao longo do curso. O projeto inclui a criação de uma interface responsiva, estilização com CSS, e interatividade com JavaScript, demonstrando as habilidades adquiridas em HTML, CSS e JavaScript.
+              </p>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <!-- rodapé da nossa página, visível ao usuário -->
+  <footer class="rodape">
+    <div class="container">
+      <ul id="contato" class="lista-rodape">
+        <li><i class="fas fa-envelope-square estilo-icone"></i>desbessel.larissa@gmail.com</li>
+        <li href=""><i class="fab fa-linkedin estilo-icone"></i>larissa-desbessel</li>
+        <li href=""><i class="fab fa-github-square estilo-icone"></i>larissa-silverio</li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+
+</html>
